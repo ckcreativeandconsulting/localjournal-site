@@ -1,0 +1,81 @@
+:root {
+  color-scheme: light dark;
+}
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.82);
+  background: #ffffff;
+}
+
+/* Page layout */
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+}
+
+h2 {
+  font-size: 1.25rem;
+  letter-spacing: -0.01em;
+  margin: 28px 0 10px;
+}
+
+/* Text */
+p {
+  margin: 0 0 14px;
+}
+
+ul {
+  margin: 0 0 14px 1.2rem;
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+}
+
+/* Links */
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Metadata / secondary text */
+.meta {
+  margin: 0 0 22px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: rgba(255, 255, 255, 0.86);
+    background: #0b0b0c;
+  }
+
+  .meta {
+    color: rgba(255, 255, 255, 0.65);
+  }
+}

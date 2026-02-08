@@ -78,4 +78,9 @@ a:hover {
   .meta {
     color: rgba(255, 255, 255, 0.65);
   }
+
+  footer {
+  margin-top: 32px;
+}
+
 }

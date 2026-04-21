@@ -97,15 +97,38 @@ section {
 }
 
 .screenshot-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  display: flex;
   gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
+
+.screenshot-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.screenshot-grid::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 999px;
+}
+
+.screenshot-grid::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 .screenshot-grid img {
-  width: 100%;
+  flex: 0 0 140px;
+  width: 140px;
   border: 1px solid var(--border);
   border-radius: 18px;
+}
+
+@media (min-width: 700px) {
+  .screenshot-grid img {
+    flex-basis: 160px;
+    width: 160px;
+  }
 }
 
 .divider {

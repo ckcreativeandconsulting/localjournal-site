@@ -1,8 +1,12 @@
 :root {
   color-scheme: light dark;
+  --text: rgba(0, 0, 0, 0.82);
+  --text-muted: rgba(0, 0, 0, 0.65);
+  --border: rgba(0, 0, 0, 0.14);
+  --panel: rgba(0, 0, 0, 0.03);
+  --bg: #ffffff;
 }
 
-/* Base reset */
 * {
   box-sizing: border-box;
 }
@@ -13,18 +17,16 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial,
     "Apple Color Emoji", "Segoe UI Emoji";
   line-height: 1.7;
-  color: rgba(0, 0, 0, 0.82);
-  background: #ffffff;
+  color: var(--text);
+  background: var(--bg);
 }
 
-/* Page layout */
 main {
   max-width: 720px;
   margin: 0 auto;
   padding: 48px 20px;
 }
 
-/* Headings */
 h1 {
   font-size: 2rem;
   letter-spacing: -0.02em;
@@ -37,7 +39,6 @@ h2 {
   margin: 28px 0 10px;
 }
 
-/* Text */
 p {
   margin: 0 0 14px;
 }
@@ -51,7 +52,11 @@ li {
   margin: 8px 0;
 }
 
-/* Links */
+img {
+  display: block;
+  max-width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: underline;
@@ -62,25 +67,62 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
-/* Metadata / secondary text */
 .meta {
   margin: 0 0 22px;
-  color: rgba(0, 0, 0, 0.65);
+  color: var(--text-muted);
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-    color: rgba(255, 255, 255, 0.86);
-    background: #0b0b0c;
-  }
+section {
+  margin: 32px 0;
+}
 
-  .meta {
-    color: rgba(255, 255, 255, 0.65);
-  }
+.store-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 10px;
+}
 
-  footer {
+.button-link {
+  display: inline-block;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  text-decoration: none;
+  background: var(--panel);
+}
+
+.button-link:hover {
+  text-decoration: none;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.screenshot-grid img {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+}
+
+.divider {
+  margin: 40px 0;
+  opacity: 0.25;
+}
+
+footer {
   margin-top: 32px;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: rgba(255, 255, 255, 0.86);
+    --text-muted: rgba(255, 255, 255, 0.65);
+    --border: rgba(255, 255, 255, 0.16);
+    --panel: rgba(255, 255, 255, 0.05);
+    --bg: #0b0b0c;
+  }
 }

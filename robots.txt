@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://localjournal.app/sitemap.xml

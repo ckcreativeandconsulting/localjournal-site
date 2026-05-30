@@ -15,57 +15,87 @@
   <meta name="twitter:card" content="summary" />
   <link rel="icon" type="image/jpeg" href="images/app-icon.jpg" />
   <link rel="apple-touch-icon" href="images/app-icon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <script src="analytics.js" defer></script>
 </head>
 <body>
-  <main>
+
+  <nav>
+    <a href="index.html" class="nav-brand">
+      <img src="images/app-icon.jpg" alt="Local Journal" />
+      <span class="nav-brand-name">Local Journal</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </nav>
+
+  <div class="inner-hero">
+    <div class="section-label">Help</div>
     <h1>Support</h1>
     <p class="meta">Need help? We'll do our best to point you in the right direction.</p>
+  </div>
 
-    <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:support@localjournal.app">support@localjournal.app</a>
-    </p>
+  <div class="inner-content">
 
-    <h2>FAQs</h2>
-    <p><strong>Is it really free?</strong><br />
-      Yes. Writing, timeline, and search are free forever. Premium adds voice entry,
-      lock, and advanced export.
-    </p>
+    <div class="contact-box">
+      <h2>Get in touch</h2>
+      <p>Can't find what you're looking for? Email us and we'll get back to you promptly.</p>
+      <a href="mailto:support@localjournal.app">↗ support@localjournal.app</a>
+    </div>
 
-    <p><strong>Do I need an account?</strong><br />
-      No. No sign-up, no login, no email.
-    </p>
+    <h2>Frequently Asked Questions</h2>
 
-    <p><strong>Where are my entries stored?</strong><br />
-      On your device only. Local Journal does not upload or sync entries to any servers.
-    </p>
+    <div class="faq-item">
+      <p class="faq-q">Is it really free?</p>
+      <p class="faq-a">Yes. Writing, timeline, and search are free forever. Premium adds voice entry, lock, and advanced export.</p>
+    </div>
 
-    <p><strong>Can I take my data with me?</strong><br />
-      Yes. Text export is always free. PDF and JSON export are included with premium.
-    </p>
+    <div class="faq-item">
+      <p class="faq-q">Do I need an account?</p>
+      <p class="faq-a">No. No sign-up, no login, no email.</p>
+    </div>
 
-    <p><strong>Is this a subscription?</strong><br />
-      No. Premium is a one-time purchase, not a subscription.
-    </p>
+    <div class="faq-item">
+      <p class="faq-q">Where are my entries stored?</p>
+      <p class="faq-a">On your device only. Local Journal does not upload or sync entries to any servers.</p>
+    </div>
 
-    <p><strong>Can you recover my entries if I delete the app or lose my phone?</strong><br />
-      No, because entries stay on your device, we don't have access to them and can't restore them.
-      If you want a backup, use Export.
-    </p>
+    <div class="faq-item">
+      <p class="faq-q">Can I take my data with me?</p>
+      <p class="faq-a">Yes. Text export is always free. PDF and JSON export are included with premium.</p>
+    </div>
 
-    <p><strong>App Lock question:</strong><br />
-      If you enable app lock, Local Journal uses your device's existing PIN/biometrics. It doesn't create a separate password.
-    </p>
+    <div class="faq-item">
+      <p class="faq-q">Is this a subscription?</p>
+      <p class="faq-a">No. Premium is a one-time purchase, not a subscription.</p>
+    </div>
 
-    <hr class="divider" />
+    <div class="faq-item">
+      <p class="faq-q">Can you recover my entries if I delete the app or lose my phone?</p>
+      <p class="faq-a">No — because entries stay on your device, we don't have access to them and can't restore them. If you want a backup, use Export before deleting the app.</p>
+    </div>
 
-    <p class="meta">
-      <a href="index.html">Home</a> |
-      <a href="privacy.html">Privacy</a> |
-      <a href="terms.html">Terms</a>
-    </p>
-  </main>
+    <div class="faq-item">
+      <p class="faq-q">How does App Lock work?</p>
+      <p class="faq-a">If you enable app lock, Local Journal uses your device's existing PIN or biometrics. It doesn't create a separate password.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <span class="footer-brand">© 2025 CK Creative and Consulting LLC</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
